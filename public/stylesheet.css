@@ -5,12 +5,13 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
   padding: 20px;
-  text-align: center
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
-h1 {
+
+.intro > h1 {
   text-align: center;
   font-weight: bold;
   color: #333;
@@ -18,7 +19,7 @@ h1 {
   font-size: 32px;
 }
 
-p {
+.intro > p {
   line-height: 1.5;
   margin-bottom: 20px;
   font-size: 18px;
@@ -34,7 +35,7 @@ p {
 }
 
 .text-box {
-  width: 400px;
+  width: 420px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -43,10 +44,20 @@ p {
   background-color: #ffffff
 }
 
+.summary-length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+  font-family: monospace;
+}
+
 textarea {
   height: 300px;
   resize: none;
-  border: none;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -101,6 +112,15 @@ textarea {
     border-top-color: #ffffff;
     border-radius: 50%;
     animation: button-loading-spinner 1s ease infinite;
+}
+
+#content-length-display {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: grey;
+  text-align: left;
+
 }
 
 @media (max-width: 768px) {
